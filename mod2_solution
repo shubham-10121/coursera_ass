@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+   <link rel="stylesheet" href="styles.css">
+  
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  height: 200px; 
+  border: 2px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media  (min-width: 992px) {
+  .column {
+    width: 33.33%;
+    }
+}
+@media (max-width: 991px) {
+  .column {
+    width: 50%;
+    }
+    #c3 {
+       width: 100%;
+    }
+}
+@media  (max-width: 767px) {
+  .column {
+    width: 100%;
+    }
+}
+
+</style>
+<body>
+  <script src="webpro.js"></script>
+  <h1 style="text-align: center;">Our Menu</h1>
+  <div class="row">
+    <div class="column">
+      <p style="background: darkgrey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cumque molestias nulla, architecto ipsam odit! Vitae 
+        nemo pariatur, sed odio nesciunt similique suscipit tempore accusantium, impedit rerum quod neque incidunt.</p>
+    </div>
+     <div class="column"> <p style="background: darkgrey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cumque molestias nulla, architecto ipsam odit! Vitae 
+        nemo pariatur, sed odio nesciunt similique suscipit tempore accusantium, impedit rerum quod neque incidunt.</p>
+    </div>
+    <div id="c3" class="column">
+      <p style="background: darkgrey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cumque molestias nulla, architecto ipsam odit! Vitae 
+        nemo pariatur, sed odio nesciunt similique suscipit tempore accusantium, impedit rerum quod neque incidunt.</p>
+    </div>
+  </div>
+</body>
+
+</html>
